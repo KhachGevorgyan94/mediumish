@@ -19,7 +19,7 @@ function Nav(){
             let mytimeout = setTimeout(() => {
                 popup.style.animationName = ``
                 popup.display = 'none'
-            }, 3000);
+            }, 0);
             mytimeout()
         } 
         

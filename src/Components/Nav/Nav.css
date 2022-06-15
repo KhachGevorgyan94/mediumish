@@ -62,7 +62,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     display: none;
     
