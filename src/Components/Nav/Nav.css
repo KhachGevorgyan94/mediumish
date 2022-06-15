@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    width: 100%;
+    /* height: 9vh; */
+    border: 1px solid lightgrey;
+    background-color: snow;
+    display: flex;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    
+}
+.logo{
+    width: 50px;
+    height: 30px;
+    background-image: url('/public/demopic/logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 100px;
+}
+.list{
+    width: 400px;
+    display: flex;
+    
+    justify-content: space-evenly;
+    margin-right: 100px;
+}
+.input{
+    width: 150px;
+    height: 27px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+
+.ul{
+    color: gray;
+}
+.li{
+    color: black;
+}
+
+.menuIcon {
+    display: none;
+}
+
+
+
+.popup {
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(190, 248, 96);
+    position: absolute;
+    right:  -50%;
+    top: 0;
+    z-index: 9999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    display: none;
+    
+    
+    
+}
+/* .z{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 9999;
+    
+} */
+
+.popup  span {
+    margin: 50px 0;
+}
+
+@keyframes popup {
+    100%{
+        display: flex;
+        right: 0;
+        
+    }
+}
+
+@keyframes off {
+    0% {
+        right: 0;
+    }
+
+    100% {
+        right: -50%;
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .menuIcon {
+        display: block;
+        padding: 8px 16px;
+        border: 1px solid black;
+        border-radius: 4px;
+    }
+
+    .list {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .logo {
+        margin: 0 auto;
+    }
+}
